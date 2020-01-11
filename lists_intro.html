@@ -9,7 +9,8 @@
 <h1>Lists</h1>
 <div id="app">
     <ul>
-        <li v-for="ingredient in ingredients">{{ ingredient }}</li>
+        <li v-for="(ingredient, i) in ingredients">{{ ingredient }} ({{ i }})</li>
+<!--        order is important, index should always be second -->
     </ul>
 </div>
 <script>
